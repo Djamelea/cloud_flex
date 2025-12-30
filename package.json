@@ -1,0 +1,24 @@
+{
+  "name": "front_practice",
+  "version": "1.0.0",
+  "description": "landing page",
+  "homepage": "https://github.com/Djamelea/cloud_flex#readme",
+  "bugs": {
+    "url": "https://github.com/Djamelea/cloud_flex/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djamelea/cloud_flex.git"
+  },
+  "license": "ISC",
+  "author": "Djamile Abdullaeva",
+  "type": "commonjs",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3",
+    "sass": "^1.97.1"
+  }
+}
