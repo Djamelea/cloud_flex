@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 * {
     box-sizing: border-box;
 }
@@ -5,4 +7,5 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    background-color: v.$color_blue;
 }
