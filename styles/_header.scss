@@ -21,7 +21,7 @@
 
         &__title {
             height: 100%;
-            width: 254px;
+            padding: 0 min(96px, 4vw);
             border: {
                 right: {
                     width: 1px;
@@ -48,8 +48,8 @@
             flex-grow: 1;
 
             .list {
-                @include m.d-flex(start, center, nowrap, row, min(96px, 5vw), 0);
-                padding: 0 0 0 min(96px, 5vw);
+                @include m.d-flex(start, center, nowrap, row, min(96px, 4vw), 0);
+                padding: 0 0 0 min(96px, 4vw);
 
                 &__item {
                     &-link {
