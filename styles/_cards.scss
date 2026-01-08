@@ -109,3 +109,49 @@
         width: 100%;
     }
 }
+
+.wave-card {
+    width: 500px;
+    height: 272px;
+    padding: 24px;
+    background: url('../assets/wave_card_bg.svg') center/contain no-repeat;
+    @include m.d-flex(start, start, nowrap, column, 0, 32px);
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__quote {
+        margin: 0 24px 0 0;
+        @include m.font(20px, 400, v.$color_white);
+    }
+
+    @media (max-width: v.$media_md) {
+        width: 392px;
+        height: 213px;
+        padding: 16px;
+        background: url('../assets/wave_card_bg.svg') 50% 0/contain no-repeat;
+        @include m.d-flex(start, start, nowrap, column, 0, 24px);
+
+        &__quote {
+            @include m.font(16px, 400, v.$color_white);
+        }
+    }
+
+    @media (max-width: v.$media_sm) {
+        width: 352px;
+        height: 192px;
+        @include m.d-flex(start, start, nowrap, column, 0, 16px);
+    }
+
+    @media (max-width: v.$media_xs) {
+        width: 328px;
+        height: 178px;
+        @include m.d-flex(start, start, nowrap, column, 0, 8px);
+
+        &__quote {
+            margin: 0 8px 0 0;
+        }
+    }
+}
